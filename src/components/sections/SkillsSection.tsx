@@ -18,8 +18,12 @@ export const SkillsSection: React.FC = () => {
   const categories: SkillCategory[] = ['Bahasa Pemrograman', 'Framework', 'Alat'];
 
   return (
-    <section id="keahlian" className="py-20 bg-white dark:bg-gray-900">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+    <section id="keahlian" className="py-20 bg-white dark:bg-gray-900 bg-grid-pattern relative overflow-hidden">
+      {/* Decorative watermark */}
+      <div className="absolute right-0 top-1/4 opacity-5 dark:opacity-10 pointer-events-none select-none font-mono text-[20rem] font-bold text-blue-500 leading-none">
+        {'}'}
+      </div>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -27,8 +31,8 @@ export const SkillsSection: React.FC = () => {
           transition={{ duration: 0.6 }}
         >
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Keahlian
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4 font-mono">
+              <span className="text-blue-500">$&gt;</span> npm run build-skills
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               Alat, bahasa, dan teknologi yang saya gunakan setiap hari.

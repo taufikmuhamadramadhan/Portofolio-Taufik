@@ -19,7 +19,7 @@ export const SkillBadge: React.FC<SkillBadgeProps> = ({ skill, showProficiency }
   };
 
   return (
-    <div className="flex items-center gap-3 px-4 py-3 bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-md transition-shadow group">
+    <div className="flex items-center gap-3 px-4 py-3 bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-md dark:hover:shadow-neon-blue transition-all duration-300 group cursor-default">
       {isTechnical && (
         <div className="text-xl flex-shrink-0 group-hover:scale-110 transition-transform">
           {renderIcon()}

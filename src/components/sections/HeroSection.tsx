@@ -4,9 +4,9 @@ import { owner } from '../../data/owner';
 import { projects } from '../../data/projects';
 import { getProjectPreviews } from '../../utils/projectUtils';
 import { ProjectPreviewCard } from '../ui/ProjectPreviewCard';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaJava } from 'react-icons/fa';
 
-import { SiJava, SiSpringboot, SiPostgresql, SiPhp } from 'react-icons/si';
+import { SiSpringboot, SiPostgresql, SiPhp } from 'react-icons/si';
 import { TypeAnimation } from 'react-type-animation';
 
 export const HeroSection: React.FC = () => {
@@ -20,7 +20,7 @@ export const HeroSection: React.FC = () => {
       duration: 5,
       repeat: Infinity,
       delay: delay,
-      ease: "easeInOut"
+      ease: "easeInOut" as const
     }
   });
 
@@ -29,7 +29,7 @@ export const HeroSection: React.FC = () => {
       {/* Floating Background Icons */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-10 dark:opacity-20 flex items-center justify-center">
         <motion.div animate={floatingAnimation(0)} className="absolute top-1/4 left-1/4 text-blue-600 dark:text-blue-400">
-          <SiJava size={120} />
+          <FaJava size={120} />
         </motion.div>
         <motion.div animate={floatingAnimation(1)} className="absolute bottom-1/4 right-1/4 text-green-600 dark:text-green-400">
           <SiSpringboot size={100} />

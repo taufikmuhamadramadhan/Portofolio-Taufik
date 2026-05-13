@@ -9,7 +9,7 @@ interface EducationItemProps {
 
 export const EducationItem: React.FC<EducationItemProps> = ({ education }) => {
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-100 dark:border-gray-700 hover:shadow-md transition-shadow">
+    <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-100 dark:border-gray-700 hover:shadow-md dark:hover:shadow-neon-blue transition-all duration-300">
       <div className="flex items-start gap-4">
         <div className="p-3 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-lg flex-shrink-0">
           <FaGraduationCap size={24} />

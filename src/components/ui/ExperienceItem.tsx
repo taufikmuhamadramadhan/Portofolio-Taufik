@@ -10,7 +10,7 @@ export const ExperienceItem: React.FC<ExperienceItemProps> = ({ experience }) =>
   return (
     <div className="relative pl-8 sm:pl-32 py-6 group">
       {/* Timeline marker */}
-      <div className="absolute left-0 sm:left-[7.5rem] top-8 w-4 h-4 rounded-full bg-white dark:bg-gray-800 border-4 border-blue-500 z-10 group-hover:scale-125 transition-transform" />
+      <div className="absolute left-0 sm:left-[7.5rem] top-8 w-4 h-4 rounded-full bg-white dark:bg-gray-800 border-4 border-blue-500 z-10 group-hover:scale-125 transition-all duration-300 dark:group-hover:shadow-neon-blue" />
       {/* Timeline line */}
       <div className="absolute left-[0.45rem] sm:left-[7.95rem] top-12 bottom-[-1.5rem] w-0.5 bg-gray-200 dark:bg-gray-700 last:bottom-0" />
       
