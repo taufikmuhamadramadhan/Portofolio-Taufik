@@ -4,44 +4,15 @@ import { owner } from '../../data/owner';
 import { projects } from '../../data/projects';
 import { getProjectPreviews } from '../../utils/projectUtils';
 import { ProjectPreviewCard } from '../ui/ProjectPreviewCard';
-import { FaLinkedin, FaGithub, FaJava } from 'react-icons/fa';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
-import { SiSpringboot, SiPostgresql, SiPhp } from 'react-icons/si';
 import { TypeAnimation } from 'react-type-animation';
 
 export const HeroSection: React.FC = () => {
   const recentProjects = getProjectPreviews(projects);
 
-  // Varian animasi untuk ikon melayang
-  const floatingAnimation = (delay: number) => ({
-    y: [0, -15, 0],
-    rotate: [0, 5, -5, 0],
-    transition: {
-      duration: 5,
-      repeat: Infinity,
-      delay: delay,
-      ease: "easeInOut" as const
-    }
-  });
-
   return (
-    <section id="beranda" className="min-h-screen pt-24 pb-16 flex flex-col justify-center bg-grid-pattern relative overflow-hidden">
-      {/* Floating Background Icons */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-10 dark:opacity-20 flex items-center justify-center">
-        <motion.div animate={floatingAnimation(0)} className="absolute top-1/4 left-1/4 text-blue-600 dark:text-blue-400">
-          <FaJava size={120} />
-        </motion.div>
-        <motion.div animate={floatingAnimation(1)} className="absolute bottom-1/4 right-1/4 text-green-600 dark:text-green-400">
-          <SiSpringboot size={100} />
-        </motion.div>
-        <motion.div animate={floatingAnimation(2)} className="absolute top-1/3 right-1/3 text-indigo-600 dark:text-indigo-400">
-          <SiPostgresql size={80} />
-        </motion.div>
-        <motion.div animate={floatingAnimation(0.5)} className="absolute bottom-1/3 left-1/3 text-indigo-500">
-          <SiPhp size={90} />
-        </motion.div>
-      </div>
-
+    <section id="beranda" className="min-h-screen pt-24 pb-16 flex flex-col justify-center">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           

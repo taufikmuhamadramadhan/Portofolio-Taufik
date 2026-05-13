@@ -10,7 +10,7 @@ export const AboutSection: React.FC = () => {
   const topSkills = technicalSkills.slice(0, 3);
 
   return (
-    <section id="tentang" className="py-20 bg-gray-50 dark:bg-gray-900/50">
+    <section id="tentang" className="py-20 bg-gray-50/50 dark:bg-gray-900/30 backdrop-blur-sm border-y border-gray-200/50 dark:border-gray-800/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -18,12 +18,8 @@ export const SkillsSection: React.FC = () => {
   const categories: SkillCategory[] = ['Bahasa Pemrograman', 'Framework', 'Alat'];
 
   return (
-    <section id="keahlian" className="py-20 bg-white dark:bg-gray-900 bg-grid-pattern relative overflow-hidden">
-      {/* Decorative watermark */}
-      <div className="absolute right-0 top-1/4 opacity-5 dark:opacity-10 pointer-events-none select-none font-mono text-[20rem] font-bold text-blue-500 leading-none">
-        {'}'}
-      </div>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl relative z-10">
+    <section id="keahlian" className="py-20 bg-transparent">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
