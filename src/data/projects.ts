@@ -23,7 +23,7 @@ export const projects: Project[] = [
     ],
     challenges:
       'Tantangan utamanya adalah mendigitalisasi alur administrasi konvensional yang kompleks menjadi sistem yang intuitif serta mengimplementasikan notifikasi WhatsApp yang stabil untuk ratusan anggota.',
-    previewImageUrl: null,
+    previewImageUrl: '/images/mockup-persis.png',
     repositoryUrl: null,
     demoUrl: 'https://sim.persisbanjaran.org/public',
     createdAt: '2025-01-01',
@@ -44,7 +44,7 @@ export const projects: Project[] = [
     ],
     challenges:
       'Memastikan aplikasi mudah digunakan oleh pengurus desa dengan latar belakang teknis yang beragam, serta memenangkan persaingan pendanaan dari 401 institusi vokasi.',
-    previewImageUrl: null,
+    previewImageUrl: '/images/mockup-simpemas.png',
     repositoryUrl: 'https://github.com/hasbyraihan/Proyek4_Aplikasi',
     demoUrl: null,
     createdAt: '2024-01-01',
@@ -65,7 +65,7 @@ export const projects: Project[] = [
     ],
     challenges:
       'Menyajikan volume data real-time yang besar ke dalam visualisasi dasbor tanpa mengorbankan performa aplikasi browser.',
-    previewImageUrl: null,
+    previewImageUrl: '/images/mockup-pln.png',
     repositoryUrl: null,
     demoUrl: null,
     createdAt: '2023-10-01',
@@ -86,7 +86,7 @@ export const projects: Project[] = [
     ],
     challenges:
       'Mengelola logika alur kerja multi-aktor (mahasiswa, dosen, orang tua, admin) dan memastikan notifikasi email terkirim secara tepat waktu sesuai perubahan status.',
-    previewImageUrl: null,
+    previewImageUrl: '/images/mockup-slp.png',
     repositoryUrl: 'https://github.com/mahesyasn18/SLP-BackEnd',
     demoUrl: null,
     createdAt: '2023-09-01',

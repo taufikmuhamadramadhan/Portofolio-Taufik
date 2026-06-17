@@ -9,7 +9,7 @@ import type { Owner } from '../types';
 export const owner: Owner = {
   fullName: 'Taufik Muhamad Ramadhan',
   tagline: 'Backend Developer yang berorientasi pada detail dengan pengalaman dalam membangun microservices yang skalabel dan memelihara aplikasi perbankan tingkat enterprise.',
-  profileImageUrl: '/images/profile.jpg', // Placeholder, we keep the original logic for images or let the user change it later
+  profileImageUrl: '/images/foto profil.jpg', // Path ke foto profil baru
   email: 'taufikm211@gmail.com',
   cvUrl: '/files/CV_Taufik_Muhamad_Ramadhan.pdf',
   socialLinks: {

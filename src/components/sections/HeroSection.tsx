@@ -15,9 +15,9 @@ export const HeroSection: React.FC = () => {
     <section id="beranda" className="min-h-screen pt-24 pb-16 flex flex-col justify-center">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
+
           {/* Identity Column */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -33,12 +33,12 @@ export const HeroSection: React.FC = () => {
                 }}
               />
             </div>
-            
+
             <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-white tracking-tight mb-4">
               Halo, saya <span className="text-blue-600 dark:text-blue-400">{owner.fullName}</span>
             </h1>
-            
-            <div className="h-[100px] mb-8">
+
+            <div className="h-[100px] mb-16">
               <TypeAnimation
                 sequence={[
                   owner.tagline,
@@ -50,7 +50,7 @@ export const HeroSection: React.FC = () => {
                 className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-lg leading-relaxed font-mono"
               />
             </div>
-            
+
             <div className="flex gap-4">
               <a
                 href={owner.socialLinks.linkedin}
@@ -74,7 +74,7 @@ export const HeroSection: React.FC = () => {
           </motion.div>
 
           {/* Project Previews Column */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -86,7 +86,7 @@ export const HeroSection: React.FC = () => {
                 Lihat Semua &rarr;
               </a>
             </div>
-            
+
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {recentProjects.slice(0, 4).map((project, idx) => (
                 <motion.div
